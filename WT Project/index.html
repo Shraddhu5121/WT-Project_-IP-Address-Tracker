@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+<!-- jQuery Module -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Leaflet Modules -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+
+  <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+
+  <title>IP Address Tracker</title>
+</head>
+<body>
+  <div class="main">
+
+    <div class="ip-input">
+      <h1>IP Address Tracker</h1>
+
+      <div class="input-div">
+
+        <input type="text" id="ipInput" name="" value="" placeholder="IP Address">
+        <button type="button" id="ipSearch" name="button"><img src="images/icon-arrow.svg" alt=""></button>
+      </div>
+
+    </div>
+
+    <div class="map" id="map"></div>
+
+    <div class="ip-details">
+      <div class="ip-address">
+        <h6>IP ADDRESS</h6>
+        <h5 id="ip-address">-</h5>
+      </div>
+
+      <div class="location">
+        <h6>LOCATION</h6>
+        <h5 id="location">-</h5>
+      </div>
+
+      <div class="time-zone">
+        <h6>TIMEZONE</h6>
+        <h5 id="time-zone">-</h5>
+      </div>
+
+      <div class="isp">
+        <h6>ISP</h6>
+        <h5 id="isp">-</h5>
+      </div>
+    </div>
+  </div>
+</body>
+<script type='text/javascript' src="script.js"></script>
+</html>
